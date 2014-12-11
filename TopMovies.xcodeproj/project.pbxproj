@@ -13,6 +13,10 @@
 		03DA58851A38BDCB00FDC046 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DA58841A38BDCB00FDC046 /* Images.xcassets */; };
 		03DA58881A38BDCB00FDC046 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DA58861A38BDCB00FDC046 /* LaunchScreen.xib */; };
 		03DA58941A38BDCB00FDC046 /* TopMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA58931A38BDCB00FDC046 /* TopMoviesTests.swift */; };
+		03DA589E1A38BFAE00FDC046 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA589D1A38BFAE00FDC046 /* ViewModel.swift */; };
+		03DA589F1A38BFAE00FDC046 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA589D1A38BFAE00FDC046 /* ViewModel.swift */; };
+		03DA58A11A38C0E000FDC046 /* MoviesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA58A01A38C0E000FDC046 /* MoviesClient.swift */; };
+		03DA58A21A38C0E000FDC046 /* MoviesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA58A01A38C0E000FDC046 /* MoviesClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 		03DA588D1A38BDCB00FDC046 /* TopMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DA58921A38BDCB00FDC046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DA58931A38BDCB00FDC046 /* TopMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesTests.swift; sourceTree = "<group>"; };
+		03DA589D1A38BFAE00FDC046 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		03DA58A01A38C0E000FDC046 /* MoviesClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 			children = (
 				03DA587D1A38BDCB00FDC046 /* AppDelegate.swift */,
 				03DA587F1A38BDCB00FDC046 /* ViewController.swift */,
+				03DA589D1A38BFAE00FDC046 /* ViewModel.swift */,
+				03DA58A01A38C0E000FDC046 /* MoviesClient.swift */,
 				03DA58811A38BDCB00FDC046 /* Main.storyboard */,
 				03DA58841A38BDCB00FDC046 /* Images.xcassets */,
 				03DA58861A38BDCB00FDC046 /* LaunchScreen.xib */,
@@ -213,7 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DA58801A38BDCB00FDC046 /* ViewController.swift in Sources */,
+				03DA589E1A38BFAE00FDC046 /* ViewModel.swift in Sources */,
 				03DA587E1A38BDCB00FDC046 /* AppDelegate.swift in Sources */,
+				03DA58A11A38C0E000FDC046 /* MoviesClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DA589F1A38BFAE00FDC046 /* ViewModel.swift in Sources */,
 				03DA58941A38BDCB00FDC046 /* TopMoviesTests.swift in Sources */,
+				03DA58A21A38C0E000FDC046 /* MoviesClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
