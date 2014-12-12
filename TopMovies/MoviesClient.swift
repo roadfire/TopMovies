@@ -7,31 +7,26 @@
 //
 
 import UIKit
+import Alamofire
 
 class MoviesClient: NSObject {
     func fetchMovies(completion: ([NSDictionary]?) -> ()) {
         // fetch the data
         let urlString = "https://itunes.apple.com/us/rss/topmovies/limit=25/json"
-        let url = NSURL(string: urlString)!
         
-        let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
-        let task = session.dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
+        Alamofire.request(.GET, urlString)
+        .responseJSON { (request, response, JSON, error) -> Void in
             if error != nil {
                 completion(nil)
                 return
             }
-            
-            // TODO: check the response status code...
-            
-            var jsonError: NSError?
-            if let json = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: &jsonError) as? NSDictionary {
-                if let movies = json.valueForKeyPath("feed.entry") as? [NSDictionary] {
+
+            if let jsonDict = JSON as? NSDictionary {
+                if let movies = jsonDict.valueForKeyPath("feed.entry") as? [NSDictionary] {
                     completion(movies)
                     return
                 }
             }
-        })
-        
-        task.resume()
+        }
     }
 }

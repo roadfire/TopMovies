@@ -17,6 +17,7 @@
 		03DA589F1A38BFAE00FDC046 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA589D1A38BFAE00FDC046 /* ViewModel.swift */; };
 		03DA58A11A38C0E000FDC046 /* MoviesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA58A01A38C0E000FDC046 /* MoviesClient.swift */; };
 		03DA58A21A38C0E000FDC046 /* MoviesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA58A01A38C0E000FDC046 /* MoviesClient.swift */; };
+		03EA86931A3B729C0025D3C7 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 03EA868D1A3B71FA0025D3C7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +28,42 @@
 			remoteGlobalIDString = 03DA58771A38BDCB00FDC046;
 			remoteInfo = TopMovies;
 		};
+		03EA868C1A3B71FA0025D3C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EA86871A3B71FA0025D3C7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		03EA868E1A3B71FA0025D3C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EA86871A3B71FA0025D3C7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		03EA86901A3B72690025D3C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EA86871A3B71FA0025D3C7 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03EA86921A3B72750025D3C7 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03EA86931A3B729C0025D3C7 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03DA58781A38BDCB00FDC046 /* TopMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +78,7 @@
 		03DA58931A38BDCB00FDC046 /* TopMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesTests.swift; sourceTree = "<group>"; };
 		03DA589D1A38BFAE00FDC046 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		03DA58A01A38C0E000FDC046 /* MoviesClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesClient.swift; sourceTree = "<group>"; };
+		03EA86871A3B71FA0025D3C7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +104,7 @@
 			children = (
 				03DA587A1A38BDCB00FDC046 /* TopMovies */,
 				03DA58901A38BDCB00FDC046 /* TopMoviesTests */,
+				03EA86861A3B6ECF0025D3C7 /* Frameworks */,
 				03DA58791A38BDCB00FDC046 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +158,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		03EA86861A3B6ECF0025D3C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03EA86871A3B71FA0025D3C7 /* Alamofire.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03EA86881A3B71FA0025D3C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03EA868D1A3B71FA0025D3C7 /* Alamofire.framework */,
+				03EA868F1A3B71FA0025D3C7 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,10 +185,12 @@
 				03DA58741A38BDCB00FDC046 /* Sources */,
 				03DA58751A38BDCB00FDC046 /* Frameworks */,
 				03DA58761A38BDCB00FDC046 /* Resources */,
+				03EA86921A3B72750025D3C7 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				03EA86911A3B72690025D3C7 /* PBXTargetDependency */,
 			);
 			name = TopMovies;
 			productName = TopMovies;
@@ -187,6 +244,12 @@
 			mainGroup = 03DA586F1A38BDCB00FDC046;
 			productRefGroup = 03DA58791A38BDCB00FDC046 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 03EA86881A3B71FA0025D3C7 /* Products */;
+					ProjectRef = 03EA86871A3B71FA0025D3C7 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				03DA58771A38BDCB00FDC046 /* TopMovies */,
@@ -194,6 +257,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		03EA868D1A3B71FA0025D3C7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 03EA868C1A3B71FA0025D3C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03EA868F1A3B71FA0025D3C7 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 03EA868E1A3B71FA0025D3C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		03DA58761A38BDCB00FDC046 /* Resources */ = {
@@ -244,6 +324,11 @@
 			isa = PBXTargetDependency;
 			target = 03DA58771A38BDCB00FDC046 /* TopMovies */;
 			targetProxy = 03DA588E1A38BDCB00FDC046 /* PBXContainerItemProxy */;
+		};
+		03EA86911A3B72690025D3C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 03EA86901A3B72690025D3C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,6 +502,7 @@
 				03DA58991A38BDCB00FDC046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03DA589A1A38BDCB00FDC046 /* Build configuration list for PBXNativeTarget "TopMoviesTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +511,7 @@
 				03DA589C1A38BDCB00FDC046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
