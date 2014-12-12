@@ -11,7 +11,7 @@ import UIKit
 class ViewModel: NSObject {
     
     @IBOutlet var moviesClient: MoviesClient!
-    var movies: [NSDictionary]?
+    var movies: [Movie]?
     
     func fetchMovies(completion: () -> ()) {
         moviesClient.fetchMovies { movies in
@@ -25,6 +25,6 @@ class ViewModel: NSObject {
     }
     
     func titleForItemAtIndexPath(indexPath: NSIndexPath) -> String {
-        return movies?[indexPath.row].valueForKeyPath("im:name.label") as? String ?? ""
+        return movies?[indexPath.row].title ?? ""
     }
 }

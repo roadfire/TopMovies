@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 class MoviesClient: NSObject {
-    func fetchMovies(completion: ([NSDictionary]?) -> ()) {
+    func fetchMovies(completion: ([Movie]?) -> ()) {
         // fetch the data
         let urlString = "https://itunes.apple.com/us/rss/topmovies/limit=25/json"
         
@@ -22,11 +22,16 @@ class MoviesClient: NSObject {
             }
 
             if let jsonDict = JSON as? NSDictionary {
-                if let movies = jsonDict.valueForKeyPath("feed.entry") as? [NSDictionary] {
+                if let moviesJSON = jsonDict.valueForKeyPath("feed.entry") as? [NSDictionary] {
+                    let movies = moviesJSON.map { self.parseMovie($0) }
                     completion(movies)
                     return
                 }
             }
         }
+    }
+    
+    func parseMovie(movie: NSDictionary) -> Movie {
+        return Movie(title: movie.valueForKeyPath("im:name.label") as String)
     }
 }
