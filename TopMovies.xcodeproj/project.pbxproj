@@ -18,6 +18,8 @@
 		03DA58A11A38C0E000FDC046 /* MoviesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA58A01A38C0E000FDC046 /* MoviesClient.swift */; };
 		03DA58A21A38C0E000FDC046 /* MoviesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA58A01A38C0E000FDC046 /* MoviesClient.swift */; };
 		03EA86931A3B729C0025D3C7 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 03EA868D1A3B71FA0025D3C7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03EA86951A3B7CD30025D3C7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EA86941A3B7CD30025D3C7 /* Movie.swift */; };
+		03EA86961A3B7E920025D3C7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EA86941A3B7CD30025D3C7 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,7 @@
 		03DA589D1A38BFAE00FDC046 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		03DA58A01A38C0E000FDC046 /* MoviesClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesClient.swift; sourceTree = "<group>"; };
 		03EA86871A3B71FA0025D3C7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		03EA86941A3B7CD30025D3C7 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 				03DA587F1A38BDCB00FDC046 /* ViewController.swift */,
 				03DA589D1A38BFAE00FDC046 /* ViewModel.swift */,
 				03DA58A01A38C0E000FDC046 /* MoviesClient.swift */,
+				03EA86941A3B7CD30025D3C7 /* Movie.swift */,
 				03DA58811A38BDCB00FDC046 /* Main.storyboard */,
 				03DA58841A38BDCB00FDC046 /* Images.xcassets */,
 				03DA58861A38BDCB00FDC046 /* LaunchScreen.xib */,
@@ -304,6 +308,7 @@
 				03DA589E1A38BFAE00FDC046 /* ViewModel.swift in Sources */,
 				03DA587E1A38BDCB00FDC046 /* AppDelegate.swift in Sources */,
 				03DA58A11A38C0E000FDC046 /* MoviesClient.swift in Sources */,
+				03EA86951A3B7CD30025D3C7 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +318,7 @@
 			files = (
 				03DA589F1A38BFAE00FDC046 /* ViewModel.swift in Sources */,
 				03DA58941A38BDCB00FDC046 /* TopMoviesTests.swift in Sources */,
+				03EA86961A3B7E920025D3C7 /* Movie.swift in Sources */,
 				03DA58A21A38C0E000FDC046 /* MoviesClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
