@@ -14,7 +14,7 @@ class ViewModel: NSObject {
     var movies: [Movie]?
     
     func fetchMovies(completion: () -> ()) {
-        moviesClient.fetchMovies { movies in
+        moviesClient.fetchMovies { [unowned self] movies in
             self.movies = movies
             completion()
         }
@@ -26,5 +26,9 @@ class ViewModel: NSObject {
     
     func titleForItemAtIndexPath(indexPath: NSIndexPath) -> String {
         return movies?[indexPath.row].title ?? ""
+    }
+    
+    func imageURLForItemAtIndexPath(indexPath: NSIndexPath) -> String {
+        return movies?[indexPath.row].imageURL ?? ""
     }
 }

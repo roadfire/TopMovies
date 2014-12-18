@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031377D71A435B5F00041A17 /* UIImageView+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031377D61A435B5F00041A17 /* UIImageView+Async.swift */; };
+		031377D81A435CA400041A17 /* UIImageView+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031377D61A435B5F00041A17 /* UIImageView+Async.swift */; };
 		03DA587E1A38BDCB00FDC046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA587D1A38BDCB00FDC046 /* AppDelegate.swift */; };
 		03DA58801A38BDCB00FDC046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA587F1A38BDCB00FDC046 /* ViewController.swift */; };
 		03DA58831A38BDCB00FDC046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DA58811A38BDCB00FDC046 /* Main.storyboard */; };
@@ -68,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		031377D61A435B5F00041A17 /* UIImageView+Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Async.swift"; sourceTree = "<group>"; };
 		03DA58781A38BDCB00FDC046 /* TopMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DA587C1A38BDCB00FDC046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DA587D1A38BDCB00FDC046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +136,7 @@
 				03DA58841A38BDCB00FDC046 /* Images.xcassets */,
 				03DA58861A38BDCB00FDC046 /* LaunchScreen.xib */,
 				03DA587B1A38BDCB00FDC046 /* Supporting Files */,
+				031377D61A435B5F00041A17 /* UIImageView+Async.swift */,
 			);
 			path = TopMovies;
 			sourceTree = "<group>";
@@ -309,6 +313,7 @@
 				03DA587E1A38BDCB00FDC046 /* AppDelegate.swift in Sources */,
 				03DA58A11A38C0E000FDC046 /* MoviesClient.swift in Sources */,
 				03EA86991A3B82EE0025D3C7 /* Movie.swift in Sources */,
+				031377D71A435B5F00041A17 /* UIImageView+Async.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +324,7 @@
 				03DA589F1A38BFAE00FDC046 /* ViewModel.swift in Sources */,
 				03DA58941A38BDCB00FDC046 /* TopMoviesTests.swift in Sources */,
 				03EA869A1A3B82EE0025D3C7 /* Movie.swift in Sources */,
+				031377D81A435CA400041A17 /* UIImageView+Async.swift in Sources */,
 				03DA58A21A38C0E000FDC046 /* MoviesClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

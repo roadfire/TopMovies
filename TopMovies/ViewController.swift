@@ -37,6 +37,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func configureCell(cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.textLabel?.text = viewModel.titleForItemAtIndexPath(indexPath)
+        cell.imageView?.image = UIImage(named: "placeholder")
+        cell.imageView?.loadFromURLString(viewModel.imageURLForItemAtIndexPath(indexPath))
     }
 
 }

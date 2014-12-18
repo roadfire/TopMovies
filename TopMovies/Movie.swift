@@ -8,4 +8,5 @@
 
 struct Movie {
     let title: String
+    let imageURL: String
 }

@@ -32,6 +32,9 @@ class MoviesClient: NSObject {
     }
     
     func parseMovie(movie: NSDictionary) -> Movie {
-        return Movie(title: movie.valueForKeyPath("im:name.label") as String)
+        let title = movie.valueForKeyPath("im:name.label") as String
+        let imageURLs = movie.valueForKeyPath("im:image") as [NSDictionary]
+        let imageURL = imageURLs.last?.valueForKeyPath("label") as String
+        return Movie(title: title, imageURL: imageURL)
     }
 }
